@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
     $error = $_FILES["image_file"]["error"];
     if (!$temp_name)
     {
-        echo "ERROR: Please browse for file before uploading";
+        echo "ERROR: Upload File Sebelum Submit";
         exit();
     }
     function compress_image($source_url, $destination_url, $quality)
@@ -64,6 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
     }
     else
     {
-        echo "Uploaded image should be jpg or gif or png.";
+        echo "ext file jpg png gif yang di bolehkan.";
     }
 } ?>
